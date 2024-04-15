@@ -1,0 +1,68 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* Set a light background for the overall app */
+}
+
+.question-form {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* White background for the form */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #007bff; /* Blue border for a pop of color */
+}
+
+    /* Style adjustments for the text area */
+    .question-form textarea {
+        width: calc(100% - 20px); /* Subtract padding from total width */
+        margin-top: 5px;
+        border: 1px solid #ced4da; /* Lighter border for the textarea */
+        border-radius: 4px;
+        padding: 10px;
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+    /* Updated button styles with hover effect */
+    .question-form button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff; /* Bootstrap blue for the button */
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+    }
+
+        .question-form button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+/* Style for the response and links for better readability */
+.response, .links {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e9ecef; /* Light gray background for responses */
+    color: #495057; /* Darker text for contrast */
+}
+
+    .links a {
+        color: #007bff; /* Blue color for links */
+        text-decoration: none; /* Optional: removes underline from links */
+    }
+
+        .links a:hover {
+            text-decoration: underline; /* Re-add underline on hover for clarity */
+        }
